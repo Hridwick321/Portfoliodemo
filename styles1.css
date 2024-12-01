@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&display=swap');
+
+.stylish-regular {
+    font-family: "Stylish", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+ 
+
+  .anek-gurmukhi {
+    font-family: "Anek Gurmukhi", sans-serif;
+    font-optical-sizing: auto; 
+    font-weight: 600;
+    font-style: normal; 
+    font-variation-settings: 
+      "wdth" 100; 
+  }
+  
+
+.stylish-regular {
+    font-family: "Stylish", serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 1.8rem; 
+    line-height: 2.2; 
+    color: #F4F4F4; 
+    text-align: center; 
+    margin: 20px auto; 
+    width: 80%; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    letter-spacing: 1px; 
+  }
+  @media (max-width: 768px) {
+    .stylish-regular {
+      font-size: 1.5rem; 
+      line-height: 2; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .stylish-regular {
+      font-size: 1.2rem;
+      line-height: 1.8; 
+      width: 95%; 
+    }
+  }
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Anek gurmukhi','Poppins', sans-serif;
+    color: #f0f0f0;
+    background-color: #121212;
+  }
+  
+  
+  nav {
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 1.5rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6f61;
+  }
+  
+
+  #home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+.home-text {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.4rem; 
+    line-height: 1.8; 
+    color: #ffffff; 
+    text-align: left; 
+    margin: 30px 20px; 
+    padding: 10px; 
+    background: linear-gradient(145deg, #202020, #303030); 
+    border-radius: 10px; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6); 
+  }
+  
+ 
+  .home-text span {
+    color: #FF5733; 
+    font-weight: bold; 
+    font-size: 1.5rem; 
+    text-transform: capitalize;
+  }
+  
+  .intro {
+    max-width: 50%;
+    text-align: left;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff6f61;
+  }
+  
+  .intro p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #d3d3d3;
+  }
+  
+  .typing {
+    color: #ffde59;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  #home img {
+    max-width: 40%;
+    border-radius:50%;
+    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  
+  #about {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ff6f61;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .block  {
+    background-color: #1f1f1f;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: #ffffff;
+  }
+  a{
+    text-decoration: none;
+  }
+  .block a:visited {
+    color:white;
+    text-decoration: none;
+    
+  }
+  
+  .block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.9);
+    color: #ffde59;
+  }
+  
+  
+  #contact {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ff6f61;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffde59;
+  }
+  
+  form input, form textarea {
+    padding: 0.7rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    font-size: 1rem;
+  }
+  
+  form button {
+    padding: 0.7rem 1.5rem;
+    background-color: #ff6f61;
+    color: #121212;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  form button:hover {
+    background-color: #ff5733;
+  }
+  
+
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #1f1f1f;
+    font-size: 0.9rem;
+    color: #d3d3d3;
+  }
+  

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+   
+    
+    <h1>Scientific Calculator</h1>
+    <p>Enter the value and perform the operations</p>
+    <div class="calculator">
+        <input type="text" id="display" class="calculator-elt" placeholder="0">
+        
+    </div>
+
+    <div class="complex-operations">
+        <input type="button" class="button" value="ln" onclick="appendValue('ln')">
+        <input type="button" class="button" value="log" onclick="appendValue('log')">
+        <input type="button" class="button" value="π" onclick="appendValue('Math.PI')">
+        <input type="button" class="button" value="e" onclick="appendValue('Math.E')">
+        <input type="button" class="button" value="DEL" onclick="deleteLastChar()"> 
+        <input type="button" class="button" value="Radian" onclick="setMode('radian')">
+        <input type="button" class="button" value="Deg" onclick="setMode('degree')">
+        <input type="button" class="button" value="x!" onclick="factorial()">
+        <input type="button" class="button" value="(" onclick="appendValue('(')">
+        <input type="button" class="button" value=")" onclick="appendValue(')')">
+        <input type="button" class="button" value="%" onclick="appendValue('%')">
+        <input type="button" class="button" value="AC" onclick="clearDisplay()">
+        <br>
+        <input type="button" class="button" value="sin" onclick="appendTrig('sin')">
+        <input type="button" class="button" value="cos" onclick="appendTrig('cos')">
+        <input type="button" class="button" value="tan" onclick="appendTrig('tan')">
+        <input type="button" class="button" value="=" onclick="calculateResult()">
+    </div>
+
+    <div class="operands-operators">
+        <input type="button" class="op-button" value="1" onclick="appendValue('1')">
+        <input type="button" class="op-button" value="2" onclick="appendValue('2')">
+        <input type="button" class="op-button" value="3" onclick="appendValue('3')">
+        <input type="button" class="operat-button" value="+" onclick="appendValue('+')">
+        <br>
+        <input type="button" class="op-button" value="4" onclick="appendValue('4')">
+        <input type="button" class="op-button" value="5" onclick="appendValue('5')">
+        <input type="button" class="op-button" value="6" onclick="appendValue('6')">
+        <input type="button" class="operat-button" value="-" onclick="appendValue('-')">
+        <br>
+        <input type="button" class="op-button" value="7" onclick="appendValue('7')">
+        <input type="button" class="op-button" value="8" onclick="appendValue('8')">
+        <input type="button" class="op-button" value="9" onclick="appendValue('9')">
+        <input type="button" class="operat-button" value="x" onclick="appendValue('*')">
+        <br>
+        <input type="button" class="op-button" value="0" onclick="appendValue('0')">
+        <input type="button" class="op-button" value="." onclick="appendValue('.')">
+        <input type="button" class="operat-button" value="/" onclick="appendValue('/')">
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
